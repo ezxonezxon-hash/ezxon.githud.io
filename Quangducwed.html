@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trường THPT Ngọc Hà - Hà Giang</title>
+  <style>
+    /* Reset và thiết lập chung */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f7f6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Phần đầu trang (Banner) */
+    header {
+      background: linear-gradient(135deg, #0d47a1, #1976d2);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* Thanh điều hướng (Menu) */
+    nav {
+      background-color: #082d6b;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 22px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #1565c0;
+    }
+
+    /* Khung nội dung chính */
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      padding: 28px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    section h2 {
+      color: #0d47a1;
+      border-bottom: 2px solid #e3f2fd;
+      padding-bottom: 10px;
+      margin-bottom: 18px;
+      font-size: 1.5rem;
+    }
+
+    /* Lưới thẻ thông tin */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 15px;
+    }
+
+    .card {
+      background-color: #f8fbff;
+      border-left: 4px solid #1976d2;
+      padding: 18px;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      color: #0d47a1;
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+    }
+
+    /* Danh sách */
+    ul.custom-list {
+      margin-left: 20px;
+    }
+
+    ul.custom-list li {
+      margin-bottom: 10px;
+    }
+
+    /* Nút bấm */
+    .btn {
+      display: inline-block;
+      background-color: #1976d2;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background-color: #0d47a1;
+    }
+
+    /* Chân trang */
+    footer {
+      background-color: #082d6b;
+      color: #dbe7ff;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 40px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Phần đầu trang -->
+  <header>
+    <h1>Trường THPT Ngọc Hà - Hà Giang</h1>
+    <p>Nơi ươm mầm tri thức – Rèn đức luyện tài nơi địa đầu Tổ quốc</p>
+  </header>
+
+  <!-- Thanh điều hướng -->
+  <nav>
+    <a href="#gioi-thieu">Giới thiệu</a>
+    <a href="#tam-nhin">Sứ mệnh & Giá trị</a>
+    <a href="#hoat-dong">Hoạt động giáo dục</a>
+    <a href="#lien-he">Liên hệ</a>
+  </nav>
+
+  <!-- Nội dung chính -->
+  <div class="container">
+
+    <!-- Mục 1: Giới thiệu chung -->
+    <section id="gioi-thieu">
+      <h2>1. Giới thiệu chung</h2>
+      <p>
+        <strong>Trường THPT Ngọc Hà</strong> tọa lạc tại phường Ngọc Hà, thành phố Hà Giang (tỉnh Hà Giang cũ). 
+        Trải qua quá trình xây dựng và phát triển, nhà trường luôn là địa chỉ giáo dục tin cậy của phụ huynh và học sinh 
+        trên địa bàn thành phố cũng như các khu vực lân cận.
+      </p>
+      <br>
+      <p>
+        Với đội ngũ cán bộ, giáo viên tâm huyết, vững vàng về chuyên môn cùng hệ thống cơ sở vật chất ngày càng khang trang, 
+        trường không ngừng đổi mới phương pháp dạy học nhằm phát huy tối đa năng lực và phẩm chất của từng học sinh.
+      </p>
+    </section>
+
+    <!-- Mục 2: Sứ mệnh & Giá trị cốt lõi -->
+    <section id="tam-nhin">
+      <h2>2. Sứ mệnh & Giá trị cốt lõi</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Chất lượng giảng dạy</h3>
+          <p>Nâng cao tỷ lệ đỗ tốt nghiệp THPT và trúng tuyển vào các trường Đại học, Cao đẳng uy tín trên cả nước.</p>
+        </div>
+        <div class="card">
+          <h3>Môi trường thân thiện</h3>
+          <p>Xây dựng ngôi trường xanh – sạch – đẹp, an toàn, tôn trọng sự sáng tạo và cá tính tích cực của học sinh.</p>
+        </div>
+        <div class="card">
+          <h3>Bản sắc & Hội nhập</h3>
+          <p>Giữ gìn nét đẹp văn hóa các dân tộc vùng cao Hà Giang gắn liền với rèn luyện kỹ năng số và ngoại ngữ.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mục 3: Hoạt động giáo dục -->
+    <section id="hoat-dong">
+      <h2>3. Hoạt động nổi bật</h2>
+      <ul class="custom-list">
+        <li><strong>Dạy và học:</strong> Triển khai hiệu quả Chương trình Giáo dục phổ thông mới, chú trọng thực hành và nghiên cứu khoa học kỹ thuật.</li>
+        <li><strong>Phong trào Đoàn – Hội:</strong> Nhiều câu lạc bộ văn nghệ, thể dục thể thao, tình nguyện vì cộng đồng sôi nổi.</li>
+        <li><strong>Hướng nghiệp:</strong> Tổ chức tư vấn tuyển sinh, định hướng nghề nghiệp sớm giúp học sinh chọn đúng ngành, đúng trường.</li>
+      </ul>
+      <a href="#lien-he" class="btn">Tìm hiểu thông tin tuyển sinh</a>
+    </section>
+
+    <!-- Mục 4: Thông tin liên hệ -->
+    <section id="lien-he">
+      <h2>4. Thông tin liên hệ</h2>
+      <p><strong>Địa chỉ:</strong> Phường Ngọc Hà, Thành phố Hà Giang, Tỉnh Hà Giang (cũ).</p>
+      <p><strong>Điện thoại văn phòng:</strong> (0219) 3866 xxx</p>
+      <p><strong>Email:</strong> thptngocha@hagiang.edu.vn</p>
+    </section>
+
+  </div>
+
+  <!-- Phần chân trang -->
+  <footer>
+    <p>&copy; 2026 Trường THPT Ngọc Hà - Hà Giang. Thiết kế phục vụ học tập HTML & CSS.</p>
+  </footer>
+
+</body>
+</html>
